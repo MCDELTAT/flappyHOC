@@ -3,8 +3,10 @@ var game = new Phaser.Game(400, 490, Phaser.AUTO, 'game_div');
 var mainState = {
 	preload: function(){
 		game.stage.backgroundColor = '#71c5cf';
-		game.load.image('bird', 'assets/bird.png');
-		game.load.image('pipe', 'assets/pipe.png');
+		game.load.baseURL = 'https://40.media.tumblr.com/';
+		game.load.crossOrigin = 'anonymous';
+		game.load.image('bird', '64dff69596c2e1b193154761757cc1d5/tumblr_nz4rn5LcB21qf0ncwo1_75sq.png');
+		game.load.image('pipe', 'b5472e0e1f79bfc4983828d262362523/tumblr_nz4rn5LcB21qf0ncwo2_75sq.png');
 	},
 	create: function(){
 		game.physics.startSystem(Phaser.Physics.ARCADE);
